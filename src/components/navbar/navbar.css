@@ -1,0 +1,25 @@
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin:auto;
+    width : 80vw;
+    margin-top: 30px;
+
+}
+
+.navbar_links_list{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    
+}
+
+.list_item{
+    padding: 15px 25px 15px 25px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: seagreen;
+    border-radius: 205px;
+    
+}

@@ -18,6 +18,8 @@ function App() {
 
           </Switch>
 
+        <Home />
+
       </Router>
     </div>
   );

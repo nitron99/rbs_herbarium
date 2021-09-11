@@ -1,0 +1,47 @@
+.HOME{
+    max-width: 100%;
+    height: 2500px;
+    background-color: white;
+    overflow:hidden;
+}
+
+
+
+
+.home_img_1 ,.home_img_2 ,.home_img_3{
+    display: flex;
+    justify-content:center;
+    object-fit: cover;
+}
+
+#img_1{
+   width: 100%;
+   min-width: 1910px;
+   position: relative;
+
+   bottom: 130px; 
+   z-index: 2;
+}
+
+
+#img_2{
+   width: 100%;
+   min-width: 1910px;
+
+   position: relative;
+   top : -300px; 
+   z-index: 2;
+   object-fit: cover;
+   height: 1000px;
+  
+}
+
+#img_3{
+    width: 100%;
+    min-width: 1910px;
+    position: relative;
+    top : -1200px;
+    z-index: 1;
+    
+    
+ }

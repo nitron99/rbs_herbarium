@@ -1,24 +1,33 @@
 .HOME{
     max-width: 100%;
-    height: 2500px;
+    min-height: 2500px;
     background-color: white;
     overflow:hidden;
+    position: relative;
 }
 
-
+.background_img{
+    position: absolute;
+    top: 0;
+    right: 0;  bottom: 0;
+    left: 0;
+    
+    
+}
 
 
 .home_img_1 ,.home_img_2 ,.home_img_3{
     display: flex;
+    
     justify-content:center;
     object-fit: cover;
+    
 }
 
 #img_1{
    width: 100%;
    min-width: 1910px;
    position: relative;
-
    bottom: 130px; 
    z-index: 2;
 }
@@ -27,7 +36,6 @@
 #img_2{
    width: 100%;
    min-width: 1910px;
-
    position: relative;
    top : -300px; 
    z-index: 2;
@@ -43,5 +51,91 @@
     top : -1200px;
     z-index: 1;
     
+    
+ }
+
+ .home_written_content{
+    position: relative;
+    width: 85vw;
+    z-index: 10;
+    margin: auto;
+     
+ }
+
+ .para1{
+    position: absolute;
+    right: 0;
+    top: 400px;
+    z-index: 10;
+    max-width: 730px;
+    color: black;
+    font-size: 20px;
+    line-height: 30px;
+    
+    font-family: 'Mulish', sans-serif;
+
+    text-align: justify;
+    text-justify:inter-word;
+ }
+
+ .para1 em{
+    font-family: 'Philosopher', sans-serif;
+    color: #3A7865;
+    font-size : 60px;
+    line-height: 70px;
+    
+ }
+
+ #down_circle{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    position: absolute;
+    left: 50%;
+    top:850px;
+    width: 60px;
+    height: 60px;
+    
+    
+ }
+
+
+ .para2{
+    position: absolute;
+    left: 0;
+    top: 1400px;
+    z-index: 10;
+    max-width: 730px;
+    color: black;
+    font-size: 20px;
+    line-height: 30px;
+    
+    font-family: 'Mulish', sans-serif;
+
+    text-align: justify;
+    text-justify:inter-word;
+ }
+
+ .para2 em{
+    font-family: 'Philosopher', sans-serif;
+    color: #3A7865;
+    font-size : 60px;
+    line-height: 70px;
+    
+ }
+
+
+ #para2_btn{
+    margin-top: 30px;
+    background-color: #3A7865;
+    border-radius: 10px;
+    border-style:none;
+    cursor:hand;
+
+    color: white;
+    padding: 15px 40px 15px 40px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 30px;
+    font-weight:500;
     
  }

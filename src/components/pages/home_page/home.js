@@ -19,6 +19,27 @@ class home extends Component{
                 </div>
 
 
+
+                <div className="home_written_content">
+                        <div className="para1">
+                            <em >Nature Does Not Hurry, Yet Everything Is Accomplished</em><br/><br/>The R.B.S. Herbarium
+                            contains over 500 specimens of vascular plants which have been perserved in digital as 
+                            well as real form. The Herbarium has been published in the "Flora of Agra" (BSI, Dehradun) & 
+                            is available for reference.
+                        </div>
+
+                        <a href="" ><img id="down_circle"src="/assets/images/down_circle.png" alt="" ></img> </a>
+
+                        <div className="para2">
+                            <em >R.B.S. Herbarium Specimens</em><br/><br/>lorem ispum
+
+                            <br/>
+                            <a href="https://google.com"><button id="para2_btn">Herbarium</button></a>
+                        </div>
+                </div>
+
+                
+
             </div>
         );
     }

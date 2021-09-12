@@ -3,6 +3,7 @@ import Navbar from './components/navbar/navbar';
 import Botany from './components/pages/botanical_page/botany';
 import About from './components/pages/about_page/about';
 import Home from './components/pages/home_page/home';
+import Footer from './components/footer/footer';
  
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
@@ -19,6 +20,7 @@ function App() {
           </Switch>
 
         <Home />
+        <Footer />
 
       </Router>
     </div>

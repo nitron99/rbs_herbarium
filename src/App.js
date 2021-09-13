@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from './components/navbar/navbar';
-import Botany from './components/pages/botanical_page/botany';
+import Herbarium from './components/pages/herbarium/herbarium';
 import About from './components/pages/about_page/about';
 import Home from './components/pages/home_page/home';
 import Footer from './components/footer/footer';
@@ -14,13 +14,14 @@ function App() {
       <Router >
         <Navbar />
           <Switch>
+            <Route path="/" exact component={Home}/>
             <Route path="/about" exact component={About}/>
-            <Route path="/botanical" exact component={Botany}/>
-
+            <Route path="/herbarium" exact component={Herbarium}/>
+            
           </Switch>
 
-        <Home />
         <Footer />
+        
 
       </Router>
     </div>

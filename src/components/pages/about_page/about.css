@@ -1,0 +1,40 @@
+.ABOUT{
+    max-width: 100%;
+    min-height: 2500px;
+    background-color: white;
+    overflow:hidden;
+    position: relative;
+}
+
+.about_written_content{
+    position: relative;
+    width: 85vw;
+    z-index: 10;
+    margin: auto;
+    
+     
+ }
+
+ .about_para1{
+    position: absolute;
+    right: 0;
+    top: 200px;
+    z-index: 10;
+    max-width: 730px;
+    color: black;
+    font-size: 20px;
+    line-height: 30px;
+    
+    font-family: 'Mulish', sans-serif;
+
+    text-align: justify;
+    text-justify:inter-word;
+ }
+
+.about_para1 em{
+    font-family: 'Philosopher', sans-serif;
+    color: #3A7865;
+    font-size : 60px;
+    line-height: 70px;
+    
+}

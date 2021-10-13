@@ -1,0 +1,7 @@
+.HERBARIUM{
+    max-width: 100%;
+    min-height: 2500px;
+    background-color: white;
+    overflow:hidden;
+    position: relative;
+}

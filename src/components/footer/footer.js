@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 class footer extends Component{
     render() {
         return(
-            <div className="FOOTER">
+            <footer className="FOOTER">
 
                 <div className="footer_content">
                     <div className="col1">
@@ -67,7 +67,7 @@ class footer extends Component{
 
                 </div>
                 
-            </div>
+            </footer>
         );
     }
 }

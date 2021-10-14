@@ -1,24 +1,25 @@
 .ABOUT{
     max-width: 100%;
-    min-height: 2500px;
+    
     background-color: white;
-    overflow:hidden;
     position: relative;
 }
 
 .about_written_content{
     position: relative;
     width: 85vw;
-    z-index: 10;
+    height: fit-content;
+    z-index: 4;
     margin: auto;
-    
-     
  }
 
  .about_para1{
-    position: absolute;
-    right: 0;
-    top: 200px;
+    position: relative;
+    margin-left: auto;
+    
+
+    padding-top: 200px;
+    margin-bottom: 120px;
     z-index: 10;
     max-width: 730px;
     color: black;
@@ -36,5 +37,9 @@
     color: #3A7865;
     font-size : 60px;
     line-height: 70px;
-    
+}
+
+.question_answer{
+    position: relative;
+    font-size: 40px;
 }

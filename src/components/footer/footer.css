@@ -2,7 +2,10 @@
     max-width: 100%;
     max-height: 700px;
     position: relative;
-    top:-155px;
+    left: 0;
+    bottom: 0;
+    margin-top: auto;
+    /* top:-155px; */
 }
 
 .divider{

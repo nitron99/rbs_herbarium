@@ -1,0 +1,31 @@
+.COLLAPSIBLE{
+    margin-bottom: 40px;
+    width: 85vw;
+    background-color: rgb(178, 240, 211);
+    border-radius: 20px;
+    height: fit-content;
+}
+
+
+.collapsible{
+    display: flex;
+    align-items: center;
+    padding: 20px 40px 20px 40px;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 40px;
+}
+
+.ANSWER{
+    height: 0px;
+    overflow :hidden;
+    transition : height ease 0.3s;
+}
+
+.answer{
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    padding: 20px 40px 20px 40px;
+    
+}
+
+

@@ -17,33 +17,44 @@ class footer extends Component{
 
                     </div>
                     <div className="col2">
-                        <h3>Department of Botany</h3>
-                        <ul> 
-                            <li>About The Department</li>
-                            <li>History & Genesis</li>
-                            <li>Facilities Offered</li>
-                            <li>Heads Of Department</li>
-                            <li>Our Faculty</li>
-                            <li>Courses Offered</li>
-                            <li>Our Achievements</li>
-                            <li>Our Projects</li>
-                            <li>Our Patents</li>
-                            <li>Placements</li>
+                        <em>DEPARTMENT OF BOTANY</em>
+                        <br/>
+                        <ul className="col2_list"> 
+                            <li>- About The Department</li>
+                            <li>- History & Genesis</li>
+                            <li>- Facilities Offered</li>
+                            <li>- Heads Of Department</li>
+                            <li>- Our Faculty</li>
+                            <li>- Courses Offered</li>
+                            <li>- Our Achievements</li>
+                            <li>- Our Projects</li>
+                            <li>- Our Patents</li>
+                            <li>- Placements</li>
 
                         </ul>
                         
                     </div>
                     <div className="col3">
-                        INTERNSHIP OPPORTUNITIES
+                        <em>INTERNSHIP OPPORTUNITIES</em>
+                        <br/>
+                        <br/>
+                        <em>ADMIN LOGIN</em>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <em>CONTACTUS</em>
+                        <br/>
+                        Lorem ipsum dolor sit amet, incididunt
+                        ut labore et dolore magna aliqua.Ut
+                        enim ad minim veniam,
+                        <br/>
+                        <br/>
+                        Phone +91 8171********(Director)<br/>
+                        <br/>
+                        +91 8171********<br/>
+                        <br/>
+                        Email Abc123@gmail.com
 
-                        <br/>
-
-                        ADMIN LOGIN
-                        <br/>
-                        FAQS
-                        <br/>
-                        CONTACTUS
-                        <br/>
 
 
                         

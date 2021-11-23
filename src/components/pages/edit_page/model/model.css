@@ -1,0 +1,76 @@
+.MODEL{
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    
+    left:0;
+    right:0;
+     
+    background-color: rgba(0,0,0,0.7);
+   
+    margin-left:auto;
+    margin-right:auto;  
+    z-index: 10;
+}
+
+.model {
+    width: 800px;
+    height: 600px;
+    position: relative;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    z-index:12;
+    margin:auto;
+
+    border-radius: 30px;
+    line-height: 70px;
+}
+
+.family, .species, .genus, .date_of_collection, .site_of_collection, .name_of_collector{
+    width: 700px;
+    height: 100%;
+   
+    font-weight: 600;
+    font-size: 25px;
+    font-family: 'Mulish', sans-serif;
+
+    display: flex;
+   
+    justify-content: end;
+    
+}
+
+.family_in, .species_in, .genus_in, .date_of_collection_in, .site_of_collection_in, .name_of_collector_in{
+    height: 50px;
+    width: 450px;
+    border-radius: 30px;
+    border-width: 2px;
+    border-color: #3A7865;
+    border-style: solid;
+    font-size: 18px;
+    padding: 15px;
+
+    font-family: 'Mulish', sans-serif;
+    margin-left: auto;
+}
+
+.submit_model{
+    width: 200px;
+    height: 60px;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 50px;
+    border-width: 2px;
+    border-color: #3A7865;
+    border-style:solid;
+    margin-top: 20px;
+
+    background-color: white;
+    color: #3A7865;
+}

@@ -1,0 +1,56 @@
+.SPECIMEN{
+    max-width: 100%;
+    position: relative;
+   
+}
+
+.specimen{
+    max-width : 70%;
+    min-width: 400px;
+    
+    margin: auto;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    line-height: 35px;
+    
+    position: relative;
+    
+}
+
+#cancel_btn , #edit_btn{
+    position: absolute;
+    left: 90%;
+    top: -30px;
+    width: 75px;
+    height: 75px;
+    opacity: 0.6;
+}
+
+#edit_btn{
+    top:60px;
+}
+
+#cancel_btn:hover , #edit_btn:hover{
+    opacity: 1.0;
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+
+
+
+.specimen_image{
+    max-width: 100%;
+    height: 300px;
+    background-color: rgb(123, 180, 123);
+    border-radius: 20px;
+}
+
+.specimen_text{
+    margin-top: auto;
+    margin: 10px 15px 10px 15px;
+
+}
+
+.specimen_text .em{
+    font-weight: 800;
+}

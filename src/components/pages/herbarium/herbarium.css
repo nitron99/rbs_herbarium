@@ -4,4 +4,20 @@
     background-color: white;
     overflow:hidden;
     position: relative;
+
+    
+}
+
+.herbarium{
+    
+    max-width: 85vw;
+    margin: auto;
+    margin-top: 200px;
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: auto;
+    grid-gap: 100px;
+
+    
 }

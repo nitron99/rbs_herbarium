@@ -1,11 +1,19 @@
-import React, {Component} from 'react';
+import React, {Component, useEffect} from 'react';
 import './footer.css';
 
-import {Link} from "react-router-dom";
+import {Link , useLocation} from "react-router-dom";
 
-class footer extends Component{
-    render() {
-        return(
+function Footer (){
+    
+    const location = useLocation();
+    console.log(location.pathname)
+    
+    // useEffect(() => {
+    // console.log(location.pathname);
+    // }, [location]);
+
+        return(   
+        (location.pathname === '/login') ? <></> :
             <footer className="FOOTER">
 
                 <div className="footer_content">
@@ -38,7 +46,7 @@ class footer extends Component{
                         <em>INTERNSHIP OPPORTUNITIES</em>
                         <br/>
                         <br/>
-                        <em>ADMIN LOGIN</em>
+                        <em><Link to="/login">ADMIN LOGIN</Link></em>
                         <br/>
                         <br/>
                         <br/>
@@ -80,7 +88,7 @@ class footer extends Component{
                 
             </footer>
         );
-    }
+    
 }
 
-export default footer;
+export default Footer;

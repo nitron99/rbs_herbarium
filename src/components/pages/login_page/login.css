@@ -1,0 +1,110 @@
+.LOGIN{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+}
+
+.login{
+    width: 800px;
+    height: 400px;
+    position: relative;
+    
+    border-radius: 30px;
+
+    
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+
+    box-shadow:
+    0px 0px 3.2px -15px rgba(0, 0, 0, 0.036),
+    0px 0px 10.2px -15px rgba(0, 0, 0, 0.068),
+    0px 0px 28.1px -15px rgba(0, 0, 0, 0.104),
+    0px 0px 128px -15px rgba(0, 0, 0, 0.15)
+    ;
+
+
+}
+
+.form{
+    width: 500px;
+    height: 300px;
+    
+    border-radius: 30px;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    
+}
+
+.EMAIL{
+   
+    font-size: 18px;
+    margin: 20px;
+    
+    
+}
+
+.PASSWORD{
+  
+    font-size: 18px;
+    margin: 20px;
+    
+}
+
+.email{
+    height: 40px;
+    width: 200px;
+    border-radius: 30px;
+    border-width: 5px;
+    border-color: #3A7865;
+    border-style: solid;
+    font-size: 18px;
+    padding: 15px;
+
+
+    margin:auto;
+    margin-left: 50px;
+}
+
+.password{
+    height: 40px;
+    width: 200px;
+    border-radius: 30px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #3A7865;
+    font-size: 18px;
+    padding: 15px;
+    
+
+    margin: auto;
+    margin-left: 25px;
+}
+
+.submit{
+    width: 100px;
+    height: 40px;
+    font-size: 22px;
+    border-radius: 20px;
+    border-width: 4px;
+    border-color: #3A7865;
+    border-style:solid;
+    margin-top: 20px;
+
+    background-color: white;
+    color: #3A7865;
+
+}

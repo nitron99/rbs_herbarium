@@ -52,10 +52,8 @@ function Footer (){
                         <br/>
                         <em>CONTACTUS</em>
                         <br/>
-                        Lorem ipsum dolor sit amet, incididunt
-                        ut labore et dolore magna aliqua.Ut
-                        enim ad minim veniam,
-                        <br/>
+                        
+                        
                         <br/>
                         Phone +91 8171********(Director)<br/>
                         <br/>
@@ -70,12 +68,10 @@ function Footer (){
 
                 </div>
 
-
-
                 <div className="divider"></div>
                 
                 <div className="bottom_panel">
-                    © 2021 Content Owned, Udpated And Maintained By PhantomCORE.
+                    © 2021 Content Owned, Udpated And Maintained By Department of Botany.
 
                     <div className="bottom_logo">
                         <img id="bottom_logo" src="/assets/logo/youtube.png" alt="" ></img> 

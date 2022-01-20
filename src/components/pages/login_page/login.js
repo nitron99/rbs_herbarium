@@ -10,6 +10,7 @@ const Login = ({authy: authy , token : token, ...rest}) => {
 
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+    const [error, setError] = useState(false)
 
     let history = useHistory()
 
@@ -17,9 +18,9 @@ const Login = ({authy: authy , token : token, ...rest}) => {
         e.preventDefault()
         const newEntry = {email: email ,password: password}
         
-        console.log(newEntry)
+        //console.log(newEntry)
         axios
-            .post('http://127.0.0.1:3000/api/v1/user/login', newEntry)
+            .post('http://192.168.1.16:3000/api/v1/user/login', newEntry)
             .then(response => {
                if(response.statusText === "OK") 
                 { 
@@ -32,7 +33,7 @@ const Login = ({authy: authy , token : token, ...rest}) => {
             })
             
             .catch(error => {
-                console.log(error)
+                setError(true)
             })
     }
     
@@ -43,15 +44,16 @@ const Login = ({authy: authy , token : token, ...rest}) => {
                         <div className="EMAIL">
                             <label htmlFor="email">Email</label>
                             <input className="email" type="text" name="email" id="email" autoComplete="off" value={email}
-                                onChange={(e) => setEmail(e.target.value)}/>
+                                required onChange={(e) => setEmail(e.target.value)}/>
                         </div>
                         <div className="PASSWORD">
                             <label htmlFor="password">Password</label>
                             <input className="password" type="password" name="password" id="password" autoComplete="off" value={password} 
-                                onChange={(e) => setPassword(e.target.value)}/>
+                                required onChange={(e) => setPassword(e.target.value)}/>
                         </div>  
 
                         <button type="submit" className="submit">Login</button>
+                        {error && "Invalid Login Credentials.."}
                         
                     </form>
                 </div>

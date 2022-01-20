@@ -16,9 +16,24 @@
     z-index: 10;
 }
 
+#model_close_btn{
+    position: absolute;
+    left: 94%;
+    top: -40px;
+    width: 80px;
+    height: 80px;
+    opacity: 0.6;
+}
+
+#model_close_btn:hover{
+    opacity: 1.0;
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+
 .model {
     width: 800px;
-    height: 600px;
+    height: 700px;
     position: relative;
     background-color: white;
     display: flex;
@@ -58,6 +73,17 @@
 
     font-family: 'Mulish', sans-serif;
     margin-left: auto;
+}
+
+.upload_btn{
+    width: 100%;
+    min-height: 60px;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+
+    background-color: white;
+    color:red;
 }
 
 .submit_model{

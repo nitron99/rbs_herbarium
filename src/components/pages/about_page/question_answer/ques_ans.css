@@ -1,7 +1,8 @@
 .COLLAPSIBLE{
     margin-bottom: 40px;
     width: 85vw;
-    background-color: rgb(178, 240, 211);
+    background-color: #a9dfb0;
+    color: black;
     border-radius: 20px;
     height: fit-content;
 }

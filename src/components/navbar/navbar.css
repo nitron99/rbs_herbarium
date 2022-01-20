@@ -12,10 +12,15 @@
     right: 0;
     display: flex;
     align-items: center;
+   
+    flex-grow: 1;
     margin:auto;
     width : 85vw;
-    margin-top: 30px;
+    min-width: 300px;
+
+    margin-top: 3em;
     z-index: 5;
+    font-size : 10px;
 
 }
 
@@ -29,7 +34,7 @@
 
 .navbar_title, em{
     font-weight: 600;
-    font-size : 22px;
+    font-size : 1.75em;
     font-family: 'Mulish', sans-serif;
     font-style: normal;
 }
@@ -38,20 +43,21 @@
     font-family: 'Philosopher', sans-serif;
     font-style: italic;
     font-weight: 500;
+    text-align: start;
 }
 
 #navbar-logo{
-    height: 90px;
-    width : 90px;
-    margin-right: 20px;
+    height: 9em;
+    width : 9em;
+    margin-right: 2em;
+    
 }
 
 .navbar_links_list{
     display: flex;
     list-style: none;
-    gap: 30px;
-    
-    
+    gap: 3em;
+
 }
 
 a:link {
@@ -74,14 +80,51 @@ a:active {
 .list_item{
     font-family: 'Mulish', sans-serif;
     font-weight: 600;
-    font-size: 20px;
-    padding: 10px 20px 10px 20px;
+    font-size: 2em;
+    padding: 0.5em 1em 0.5em 1em;
     border-color: #3A7865;
     border-style: solid;
-    border-width: 2px;
-    border-radius: 30px;
+    border-width: 0.1em;
+    border-radius: 1.5em;
     color: #3A7865 ;
-
-    
     
 }
+
+@media(max-width: 1211px){
+    .NAVBAR{
+       font-size: 55%;
+    }
+ }
+
+ @media(max-width: 1051px){
+   .NAVBAR{
+      font-size: 48.5%;
+   }
+}
+
+@media(max-width: 935px){
+    .NAVBAR{
+       font-size: 45%;
+    }
+ }
+
+@media(max-width: 645px){
+   .NAVBAR{
+      font-size: 40%;
+      width:90vw;
+   }
+}
+@media(max-width: 520px){
+    .NAVBAR{
+        font-size: 35%;
+        width:100vw;
+     }
+    .navbar{
+        row-gap: 10px;
+        flex-direction: column;
+    }
+    #navbar-logo{
+        margin-right: 1em;
+        margin-left: 2em;
+    }
+ }

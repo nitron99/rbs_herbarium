@@ -13,8 +13,6 @@ class navbar extends Component{
                     <div className="navbar_title">
                         <em>RAJA BALWANT SINGH COLLEGE</em><br/>Department of Botany
     
-                        
-
                     </div>
                     <div className="navbar_links">
                         <ul className="navbar_links_list">

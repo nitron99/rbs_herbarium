@@ -1,8 +1,8 @@
 .ABOUT{
-    max-width: 100%;
-    
+    width: 100%;
     background-color: white;
     position: relative;
+    font-size: 10px;
 }
 
 .about_written_content{
@@ -11,20 +11,37 @@
     height: fit-content;
     z-index: 4;
     margin: auto;
+
  }
+
+ .about_img{
+    display: flex;
+    flex-direction: row;
+ }
+
+ #about_img{
+    position: relative;
+    width: 44.6em;
+    height: 54em;
+
+    margin: auto;
+    margin-top: 12em;
+    /*margin-left: 100px;
+    margin-bottom: 50px; */
+}
 
  .about_para1{
     position: relative;
     margin-left: auto;
     
 
-    padding-top: 200px;
-    margin-bottom: 120px;
+    padding-top: 12.5em;
+    margin-bottom: 6em;
     z-index: 10;
-    max-width: 730px;
+    max-width: 36.5em;
     color: black;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 2em;
+    line-height: 1.5em;
     
     font-family: 'Mulish', sans-serif;
 
@@ -35,11 +52,151 @@
 .about_para1 em{
     font-family: 'Philosopher', sans-serif;
     color: #3A7865;
-    font-size : 60px;
-    line-height: 70px;
+    font-size : 3em;
+    line-height: 1.166em;
 }
+
+
+.heading{
+    font-family: 'Philosopher', sans-serif;
+    color: #3A7865;
+    font-size: 4em;
+    font-weight: 600; 
+    margin-left: 0.25em;
+    margin-bottom: 0.25em;
+    margin-top: 1.5em;
+}
+
+.about_the_department{
+    width: 85vw;
+    font-family: 'Mulish', sans-serif;
+    font-size: 2em;
+    margin-left: 2.5em;
+    line-height: 1.5em;
+}
+
+.history_block, .facilites_block, .head_of_dept_block, .faculty_block, .project_block{
+    display: flex;
+}
+
+.history_genesis , .facilites_offered ,.head_of_department ,.faculty, .international_projects, .industrial_projects,.patents{
+    width: 50vw;
+    font-family: 'Mulish', sans-serif;
+    font-size: 2em;
+    margin-left: 2.5em;
+    line-height: 1.5em;
+}
+
+.history_genesis em ,.facilites_offered em,.head_of_department em ,.faculty em, .international_projects em, .industrial_projects em, .patents em{
+    font-size: 1em;
+   
+}
+
+.patents{
+    width: 80vw;
+}
+
+.head_of_department{
+    width: 65vw;
+    min-width: 30em;
+    height: 30em;
+    overflow-y: scroll;
+}
+.faculty{
+    width: 62vw;
+    height: 30em;
+    min-width: 30em;
+    overflow-y: scroll;
+}
+
+#history_img{
+    width:41.9em;
+    height: 45.2em;
+    margin-left: auto;
+  
+}
+
+#facility_img{
+    width: 40em;
+    height: 66em;
+    margin-left: auto;
+}
+
+#head_img{
+    width: 30em;
+    height:60em;
+    margin-right: auto;
+    margin-left: 5em;
+}
+
+#faculty_img{
+    width: 35em;
+    height: 60em;
+    margin-left: auto;
+}
+
+
+
 
 .question_answer{
     position: relative;
-    font-size: 40px;
+    font-size: 4em;
+    margin-top: 6em;
 }
+
+
+@media(max-width: 998px){
+    .ABOUT{
+       font-size: 55%;
+    }
+   
+ }
+
+ @media(max-width: 768px){
+   .ABOUT{
+      font-size: 48.5%;
+   }
+   .history_block, .facilites_block, .head_of_dept_block, .faculty_block, .project_block{
+        flex-direction: column;
+    }
+
+    .history_genesis , .facilites_offered ,.head_of_department ,.faculty, .international_projects, .industrial_projects,.patents{
+        width: 85vw;
+        font-family: 'Mulish', sans-serif;
+        font-size: 2em;
+        margin-left: 2.5em;
+        line-height: 1.5em;
+    }
+    .head_of_department, .faculty{
+        height: fit-content;
+        
+    }
+   
+}
+
+@media(max-width: 700px){
+   .ABOUT{
+      font-size: 40%;
+   }
+}
+
+@media(max-width: 580px){
+   .ABOUT{
+      font-size: 35%;
+     
+   }
+}
+@media(max-width: 537px){
+    .ABOUT{
+       font-size: 35%;
+      
+    }
+
+    #about_img{
+        width: 0px;
+        height: 0px;
+    }
+    .about_written_content{
+        width:95vw;
+    }
+ }

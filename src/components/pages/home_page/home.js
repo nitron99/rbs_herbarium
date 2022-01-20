@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import './home.css';
 
+import {Link} from 'react-router-dom';
+
 class home extends Component{
     render() {
         return(
@@ -31,10 +33,10 @@ class home extends Component{
                         <a href="" ><img id="down_circle"src="/assets/images/down_circle.png" alt="" ></img> </a>
 
                         <div className="para2">
-                            <em >R.B.S. Herbarium Specimens</em><br/><br/>lorem ispum
+                            <em >R.B.S. Herbarium Specimens</em><br/>
 
                             <br/>
-                            <a href="https://google.com"><button id="para2_btn">Herbarium</button></a>
+                            <Link to="/herbarium"><button id="para2_btn">Herbarium</button></Link>
                         </div>
                 </div>
 

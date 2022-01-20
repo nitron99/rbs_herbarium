@@ -1,52 +1,60 @@
 .HOME{
-    max-width: 100%;
+    /* min-width: 320px; */
+    /* max-height: auto; */
     min-height: 2350px;
     background-color: rgb(255, 255, 255);
     overflow:hidden;
     position: relative;
+    
 }
 
 .background_img{
     position: absolute;
     top: 0;
+    /* width: 100%; */
     right: 0;  bottom: 0;
     left: 0;
+    font-size: 10px;
 }
 
 
 .home_img_1 ,.home_img_2 ,.home_img_3{
     display: flex;
-    
+    overflow:hidden;
     justify-content:center;
     object-fit: cover;
     
 }
 
 #img_1{
-   width: 100%;
+   /* width: 100%; */
    min-width: 1910px;
    position: relative;
-   bottom: 130px; 
+   bottom: 130px;
+
+   overflow: hidden;
    z-index: 2;
 }
 
 
 #img_2{
-   width: 100%;
+   /* width: 100%; */
    min-width: 1910px;
    position: relative;
    top : -300px; 
    z-index: 2;
+  
    object-fit: cover;
    height: 1000px;
   
 }
 
 #img_3{
-    width: 100%;
+    /* width: 100%; */
     min-width: 1910px;
     position: relative;
     top : -1200px;
+    
     z-index: 1;
     
     
@@ -56,6 +64,7 @@
     position: relative;
     width: 85vw;
     z-index: 10;
+    font-size: 10px;
     margin: auto;
      
  }
@@ -65,10 +74,10 @@
     right: 0;
     top: 400px;
     z-index: 10;
-    max-width: 730px;
+    max-width: 36.5em;
     color: black;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 2em;
+    line-height: 2em;
     
     font-family: 'Mulish', sans-serif;
 
@@ -79,8 +88,8 @@
  .para1 em{
     font-family: 'Philosopher', sans-serif;
     color: #3A7865;
-    font-size : 60px;
-    line-height: 70px;
+    font-size : 3em;
+    line-height: 1.2em;
     
  }
 
@@ -90,10 +99,9 @@
     justify-content:center;
     position: absolute;
     left: 50%;
-    top:850px;
-    width: 60px;
-    height: 60px;
-    
+    top: 85em;
+    width: 6em;
+    height: 6em;
     
  }
 
@@ -103,10 +111,10 @@
     left: 0;
     top: 1400px;
     z-index: 10;
-    max-width: 730px;
+    max-width: 36.5em;
     color: black;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 2em;
+    line-height: 1.5em;
     
     font-family: 'Mulish', sans-serif;
 
@@ -117,8 +125,8 @@
  .para2 em{
     font-family: 'Philosopher', sans-serif;
     color: #3A7865;
-    font-size : 60px;
-    line-height: 70px;
+    font-size : 3em;
+    line-height: 1.2em;
     
  }
 
@@ -137,3 +145,34 @@
     font-weight:500;
     
  }
+
+ @media(max-width: 998px){
+    .home_written_content{
+       font-size: 55%;
+    }
+    .background_img{
+       font-size: 50%;
+    }
+ }
+
+ @media(max-width: 768px){
+   .home_written_content{
+      font-size: 48.5%;
+   }
+   #down_circle{
+      top:700px;
+   }
+}
+
+@media(max-width: 700px){
+   .home_written_content{
+      font-size: 40%;
+   }
+}
+
+@media(max-width: 580px){
+   .home_written_content{
+      font-size: 35%;
+      min-width: 320px;
+   }
+}

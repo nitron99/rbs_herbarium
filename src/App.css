@@ -11,10 +11,16 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
-    
+  
 }
-
+html,body{
+  min-width:400px;
+  
+  margin:0;
+  padding:0;
+  overflow-x: hidden;
+ 
+  }
 /* .App{
   height: 2840px;
 } */
@@ -23,7 +29,7 @@
 
 /* width */
 ::-webkit-scrollbar {
-    width: 7px;
+    max-width: 7px;
   }
   
   /* Handle */
@@ -34,4 +40,9 @@
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: rgb(26, 110, 93); 
+  }
+
+  ::selection {
+    color: white;
+    background: #3A7865;
   }

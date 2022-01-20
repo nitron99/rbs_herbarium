@@ -1,0 +1,68 @@
+.PAGER{
+    position: relative;
+    width: 100%;
+    font-size: 10px;
+}
+
+.pager{
+    width: 85vw;
+    height: 10em;
+    font-size: 1em;
+    margin: auto;
+    
+}
+
+.upper_text{
+    height: 2em;
+    font-size: 2.5em;
+    text-align: center;
+    
+}
+
+.lower_text{
+    height: 2em;
+    font-size: 2em;
+    
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#next_btn, #prev_btn{
+    width: 2em;
+    height: 2em;
+    margin-left: 1em;
+}
+
+@media(max-width: 1211px){
+    .PAGER{
+       font-size: 55%;
+    }
+ }
+
+ @media(max-width: 1051px){
+   .PAGER{
+      font-size: 48.5%;
+
+   }
+}
+
+@media(max-width: 935px){
+    .PAGER{
+       font-size: 45%;
+    }
+ }
+
+@media(max-width: 645px){
+   .PAGER{
+      font-size: 40%;
+   }
+}
+@media(max-width: 520px){
+    .PAGER{
+        font-size: 35%;
+    }
+    
+    
+    
+ }

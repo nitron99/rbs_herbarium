@@ -7,7 +7,7 @@ class navbar extends Component{
     render() {
         return(
             <div className="NAVBAR">
-                <Link to="/" ><img id="navbar-logo" src="/assets/logo/logo.png"/></Link>
+                <Link to="/" ><img id="navbar-logo" src="/assets/logo/logo.png" alt=""/></Link>
 
                 <div className="navbar">
                     <div className="navbar_title">

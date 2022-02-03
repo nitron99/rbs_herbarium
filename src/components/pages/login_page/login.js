@@ -1,12 +1,9 @@
 import React, { useState } from 'react'
 import './login.css';
-
 import axios from 'axios';
-import Edit from '../edit_page/edit';
-import {BrowserRouter as Router, Switch, Route , Redirect ,useHistory} from 'react-router-dom';
-import {Link} from "react-router-dom";
+import {useHistory} from 'react-router-dom';
 
-const Login = ({authy: authy , token : token, ...rest}) => {
+const Login = ({authy , token, ...rest}) => {
 
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
@@ -28,7 +25,6 @@ const Login = ({authy: authy , token : token, ...rest}) => {
                     authy() 
                     history.push('/edit')
                 }else{
-                    console.log("asd")
                 }         
             })
             

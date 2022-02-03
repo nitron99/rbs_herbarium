@@ -57,7 +57,7 @@
 
     display: flex;
    
-    justify-content: end;
+    justify-content: flex-end;
     
 }
 
@@ -84,6 +84,10 @@
 
     background-color: white;
     color:red;
+}
+
+.error_text{
+    color: red;
 }
 
 .submit_model{

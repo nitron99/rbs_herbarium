@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import './herbarium.css';
-import Specimen_card from './specimen_card/specimen_card';
-import Search_bar from './search_bar/search_bar';
+import SpecimenCard from './specimen_card/specimen_card';
+import SearchBar from './search_bar/search_bar';
 import Pager from './pager/pager';
-
 
 class herbarium extends Component{
 
@@ -41,9 +40,7 @@ class herbarium extends Component{
         .catch(error => {
             console.log(error)
             this.setState({errorMsg: 'Error retreiving data'})
-        })
-
-        
+        })     
     }
 
     searchHanlder = (text) => {
@@ -58,18 +55,17 @@ class herbarium extends Component{
             })
     }
 
-    loadnextpage = (current) => {
+    loadnextpage = () => {
         if(this.state.page_number === Math.ceil(this.state.total_element/20))
         {
             
         }else{
             this.setState({page_number: this.state.page_number+1})
             this.loader(this.state.page_number+1);
-        }
-        
+        }    
     }
 
-    loadprevpage = (current) => {
+    loadprevpage = () => {
         if(this.state.page_number === 1)
         {
             
@@ -77,24 +73,21 @@ class herbarium extends Component{
             this.setState({page_number: this.state.page_number-1})
             this.loader(this.state.page_number-1);
         }
-        
-        console.log("prev")
     }
-
-     
+ 
     render() {
         const { items , errorMsg , page_number , total_element } = this.state
         return(
             <div className="HERBARIUM">
               
                 <div className="herb_search_bar">
-                    <Search_bar text={this.searchHanlder} />
+                    <SearchBar text={this.searchHanlder} />
                 </div>
                 <div className="pager_bar">
                     <Pager data={page_number} next={this.loadnextpage} prev={this.loadprevpage} total={total_element}/>
                 </div>
                 <div className = "herbarium">
-                {items.length ? items.map(item => <Specimen_card key={item._id} data={item} edit={false}/>) : null}
+                {items.length ? items.map(item => <SpecimenCard key={item._id} data={item} edit={false}/>) : null}
                 {errorMsg ? <div>{errorMsg}</div> : null}
                 </div>
             

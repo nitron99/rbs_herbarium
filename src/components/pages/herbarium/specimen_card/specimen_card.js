@@ -1,14 +1,10 @@
-import React,{useState} from 'react';
+import React from 'react';
 import './specimen_card.css';
-
-
 
 function Specimen_card (props) {
     
     const { data , edit , del} = props
-    const [img, setImg] = useState(`http://192.168.1.16:3000/img/sample/${data.image}`)
     
-
     // console.log(img)
     return (
         <div className="SPECIMEN">
@@ -17,7 +13,7 @@ function Specimen_card (props) {
                 {edit && <img id="cancel_btn" src="/assets/images/cancel.png" alt="" onClick={() => {del(data._id)}} ></img>}
                 {edit && <img id="edit_btn" src="/assets/images/pencil.png" alt="" onClick={() => {edit(data)}} ></img>}
                 <div className="specimen_image">
-                    <img id="spec_img" src={img} alt="" ></img>
+                    <img id="spec_img" src={`http://192.168.1.16:3000/img/sample/${data.image}`} alt="" ></img>
                 </div>
                 
                 <div className="specimen_text">
@@ -37,6 +33,5 @@ function Specimen_card (props) {
         </div>
     );
 }
-
 
 export default Specimen_card;

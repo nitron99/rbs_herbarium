@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import './model.css'
 
-const Model = ({data : data , openmodel : openmodel , edit : editData , editreq : editreq , update: update}) => {
+const Model = ({data, openmodel , edit : editData , editreq  , update}) => {
 
     const [family, setFamily] = useState(editreq ? editData.family : "")
     const [genus, setGenus] = useState(editreq ? editData.genus : "")
@@ -12,19 +12,11 @@ const Model = ({data : data , openmodel : openmodel , edit : editData , editreq 
     const [image, setImage] = useState("");
     const [imagename, setImagename] = useState("");
     const newEntry = new FormData();
-    const updatedEntry = new FormData();
+
     
     const submitEntry = (e) => {
         e.preventDefault() 
-        
-        // const newEntry = {species : species,
-        // genus : genus,
-        // family : family,
-        // image : img,
-        // siteofcollection : site_of_collection ,
-        // timeofcollection : date_of_collection,
-        // nameofcollector : name_of_collector}
-        
+    
         newEntry.append('species', species)
         newEntry.append('genus', genus)
         newEntry.append('family', family)
@@ -34,26 +26,19 @@ const Model = ({data : data , openmodel : openmodel , edit : editData , editreq 
         newEntry.append('nameofcollector', name_of_collector)
         
         data(newEntry)
-        console.log(newEntry)
+        //console.log(newEntry)
         openmodel()
     }
 
     const updateEntry = (e) => {
         e.preventDefault()
-        // const newEntry = {species : species,
-        //     genus : genus,
-        //     family : family ,
-        //     image : img,
-        //     siteofcollection : site_of_collection ,
-        //     timeofcollection : date_of_collection,
-        //     nameofcollector : name_of_collector}
-        updatedEntry.append('species', species)
-        updatedEntry.append('genus', genus)
-        updatedEntry.append('family', family)
-        updatedEntry.append('image', image , imagename);
-        updatedEntry.append('siteofcollection', site_of_collection)
-        updatedEntry.append('timeofcollection', date_of_collection)
-        updatedEntry.append('nameofcollector', name_of_collector)
+        
+        const updatedEntry = {species : species,
+            genus : genus,
+            family : family,
+            siteofcollection : site_of_collection ,
+            timeofcollection : date_of_collection,
+            nameofcollector : name_of_collector}
 
         update(updatedEntry , editData._id)
         openmodel()     
@@ -67,7 +52,6 @@ const Model = ({data : data , openmodel : openmodel , edit : editData , editreq 
     const closemodel = () =>{
         openmodel()
     }
-
 
         return (
             <div className="MODEL">
@@ -106,13 +90,10 @@ const Model = ({data : data , openmodel : openmodel , edit : editData , editreq 
                                 required onChange={(e) => setName_of_collector(e.target.value)}/>
                         </div> 
 
-                        <div className="name_of_collector">
+                        {editreq? <div className="error_text" >for changing image, delete this sample and create new sample. </div> :  <div className="name_of_collector">
                             <input type="file"  className="upload_btn" 
                              required onChange={filesSelectedHandler}/>
-                             
-
-                        </div>
-                       
+                        </div>}
 
                         <button type="submit" className="submit_model">Submit</button>
                         

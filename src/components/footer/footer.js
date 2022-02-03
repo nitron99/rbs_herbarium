@@ -1,4 +1,4 @@
-import React, {Component, useEffect} from 'react';
+import React from 'react';
 import './footer.css';
 
 import {Link , useLocation} from "react-router-dom";
@@ -6,12 +6,8 @@ import {Link , useLocation} from "react-router-dom";
 function Footer (){
     
     const location = useLocation();
-    console.log(location.pathname)
+    //console.log(location.pathname)
     
-    // useEffect(() => {
-    // console.log(location.pathname);
-    // }, [location]);
-
         return(   
         (location.pathname === '/login') ? <></> :
             <footer className="FOOTER">
@@ -28,16 +24,15 @@ function Footer (){
                         <em>DEPARTMENT OF BOTANY</em>
                         <br/>
                         <ul className="col2_list"> 
-                            <li>- About The Department</li>
-                            <li>- History & Genesis</li>
-                            <li>- Facilities Offered</li>
-                            <li>- Heads Of Department</li>
-                            <li>- Our Faculty</li>
-                            <li>- Courses Offered</li>
-                            <li>- Our Achievements</li>
-                            <li>- Our Projects</li>
-                            <li>- Our Patents</li>
-                            <li>- Placements</li>
+                        <Link to="/about" ><li>- About The Department</li></Link>
+                        <Link to="/about" ><li>- History & Genesis</li></Link>
+                        <Link to="/about" ><li>- Facilities Offered</li></Link>
+                        <Link to="/about" ><li>- Heads Of Department</li></Link>
+                        <Link to="/about" ><li>- Our Faculty</li></Link>
+                        <Link to="/about" ><li>- Courses Offered</li></Link>
+                        <Link to="/about" ><li>- Our Achievements</li></Link>
+                        <Link to="/about" ><li>- Our Projects</li></Link>
+                        <Link to="/about" ><li>- Placements</li></Link>
 
                         </ul>
                         
@@ -60,10 +55,7 @@ function Footer (){
                         +91 8171********<br/>
                         <br/>
                         Email Abc123@gmail.com
-
-
-
-                        
+  
                     </div>
 
                 </div>

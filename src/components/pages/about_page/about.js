@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './about.css';
-import Ques_ans from './question_answer/ques_ans';
+import QuesAns from './question_answer/ques_ans';
 import {questions} from './question_answer/questions';
 
 class about extends Component{
@@ -262,7 +262,7 @@ class about extends Component{
                     <div className="question_answer">
                         {questions.map((item, index) => {
                             return (
-                                <Ques_ans data={item} key={index}/>
+                                <QuesAns data={item} key={index}/>
         
                             )
                         })}

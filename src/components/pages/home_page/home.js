@@ -20,8 +20,6 @@ class home extends Component{
                     </div>
                 </div>
 
-
-
                 <div className="home_written_content">
                         <div className="para1">
                             <em >Nature Does Not Hurry, Yet Everything Is Accomplished</em><br/><br/>The R.B.S. Herbarium
@@ -30,7 +28,7 @@ class home extends Component{
                             is available for reference.
                         </div>
 
-                        <a href="" ><img id="down_circle"src="/assets/images/down_circle.png" alt="" ></img> </a>
+                        <img id="down_circle"src="/assets/images/down_circle.png" alt="" ></img>
 
                         <div className="para2">
                             <em >R.B.S. Herbarium Specimens</em><br/>
@@ -39,9 +37,6 @@ class home extends Component{
                             <Link to="/herbarium"><button id="para2_btn">Herbarium</button></Link>
                         </div>
                 </div>
-
-                
-
             </div>
         );
     }

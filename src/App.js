@@ -10,7 +10,7 @@ import ProtectedRoute from './components/pages/edit_page/protectedRoute';
 
 import React , {useState} from 'react';
  
-import {BrowserRouter as Router, Switch, Route , useLocation , Redirect , Link} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 
 const App = (props) => {
@@ -19,12 +19,12 @@ const App = (props) => {
   const [token, setToken] = useState('');
 
   const Logined = (index) => { 
-    console.log('logined in');
+    //console.log('logined in');
     setIsAuth(true);
   };
 
   const Logouted = (index) => {
-    console.log('logoutt ');
+    //console.log('logoutt ');
     setIsAuth(false);
   }
 

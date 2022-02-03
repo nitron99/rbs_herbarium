@@ -3,10 +3,8 @@ import './pager.css';
 
 function Pager(props) {
  
-  const {data , next , prev,  total} = props
-  
-
- let  multi = (data-1)*20;
+   const {data , next , prev,  total} = props
+   const  multi = (data-1)*20;
 
   return(
     <div className="PAGER">
